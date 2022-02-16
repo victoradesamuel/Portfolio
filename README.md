@@ -59,5 +59,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/victoradesamuel/Portfolio/blob/main/MIT.md) licensed.
+This project is [MIT](https://github.com/victoradesamuel/Portfolio/commit/c817e36ee1da19c48679d473838816ebf7985602) licensed.
 
