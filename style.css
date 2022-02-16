@@ -59,7 +59,7 @@ header {
 }
 
 .intro-section {
-  background-image: url(/assets/images/header-shapes\ mobile@2x.png);
+  background-image: url(./assets/images/header-shapes\ mobile@2x.png);
   background-size: 375px;
   background-repeat: no-repeat;
   background-color: white;
