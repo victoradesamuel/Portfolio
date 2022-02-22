@@ -278,7 +278,7 @@ h3 {
 }
 
 .about-me {
-  height: 1200px;
+  height: 1250px;
   margin-top: 120px;
   margin-top: 50px;
   background-color: white;
@@ -416,4 +416,85 @@ h3 {
 .core li:nth-child(3)::before {
   padding: 5px 10px;
   content: url(./assets/images/css.png);
+}
+
+.contact {
+  background-image: url(./assets/images/contact-form-shapes-mobile.png);
+  background-color: #6070ff;
+  background-size: 390px 750px;
+  position: absolute;
+  border-top-left-radius: 120px;
+  margin-top: -110px;
+  height: 800px;
+}
+
+.contact-form h2 {
+  padding-top: 100px;
+  padding-left: 80px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  line-height: 35px;
+  margin-left: -10px;
+}
+
+.contact-form p {
+  padding-top: 15px;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  width: 350px;
+}
+
+form {
+  margin-top: 45px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  padding: 15px;
+}
+
+#email {
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+  margin-top: 18px;
+  border: none;
+  font-size: 18px;
+  padding: 15px;
+}
+
+#message {
+  width: 327px;
+  height: 180px;
+  border-radius: 8px;
+  margin-top: 18px;
+  border: none;
+  font-size: 18px;
+  padding: 15px;
+}
+
+#btn-submit {
+  height: 48px;
+  width: 150px;
+  border-radius: 8px;
+  background-color: white;
+  color: #6070ff;
+  border: none;
+  margin-left: 25px;
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 200px;
 }
