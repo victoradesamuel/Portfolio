@@ -64,6 +64,7 @@ nav {
   border-radius: 5px;
   padding-top: 12px;
   margin-right: 18px;
+  transition: all 1s ease;
 }
 
 .nav-items {
