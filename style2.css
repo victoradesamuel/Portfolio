@@ -370,7 +370,7 @@ li {
 
 .about-me {
   min-height: 950px;
-  min-width: 400px;
+  min-width: 992px;
   background-color: white;
   border-top-right-radius: 150px;
   margin-top: 150px;
@@ -417,6 +417,7 @@ li {
   margin-left: 780px;
   margin-top: -420px;
   width: 850px;
+  position: relative;
 }
 
 .skills ul {
@@ -481,14 +482,14 @@ li {
 
 .languages .fa.fa-angle-down {
   margin-top: 33px;
-  margin-right: 250px;
+  margin-right: 270px;
 }
 
 .frameworks {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #c1c7d0;
-  width: 620px;
+  width: 600px;
 }
 
 .frameworks p {
@@ -509,7 +510,7 @@ li {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #c1c7d0;
-  width: 620px;
+  width: 600px;
 }
 
 .non-tech-skills p {
