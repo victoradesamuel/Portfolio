@@ -123,13 +123,12 @@ li {
 }
 
 .work-samples {
-  margin-right: 0;
-  margin-left: 0;
+  margin-left: 2px;
   margin-top: 10px;
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 375px;
 }
 
 .work-sample-1 {
@@ -140,7 +139,7 @@ li {
   background-color: white;
   border-radius: 20px;
   height: 600px;
-  width: 327px;
+  width: 325px;
 }
 
 .desktop-1 {
@@ -154,7 +153,7 @@ li {
   background-color: white;
   border-radius: 20px;
   height: 650px;
-  width: 327px;
+  width: 325px;
 }
 
 .desktop-2 {
@@ -168,7 +167,7 @@ li {
   background-color: white;
   border-radius: 20px;
   height: 600px;
-  width: 327px;
+  width: 325px;
 }
 
 .desktop-3 {
@@ -182,7 +181,7 @@ li {
   background-color: white;
   border-radius: 20px;
   height: 650px;
-  width: 327px;
+  width: 325px;
 }
 
 .desktop-4 {

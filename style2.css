@@ -369,15 +369,15 @@ li {
 }
 
 .about-me {
-  min-height: 950px;
-  min-width: 992px;
+  height: 950px;
+  width: 1500px;
   background-color: white;
   border-top-right-radius: 150px;
   margin-top: 150px;
 }
 
 .about-me h1 {
-  margin-left: -2px;
+  margin-left: -50px;
   font-size: 45px;
   margin-top: -30px;
   line-height: 60px;
@@ -385,18 +385,18 @@ li {
 
 .about-me p {
   font-size: 22px;
-  margin-left: -2px;
+  margin-left: -50px;
   line-height: 28px;
   width: 750px;
 }
 
 .about-me h6 {
-  margin-left: -2px;
+  margin-left: -50px;
 }
 
 .about-me .social-icons {
   padding-top: 20px;
-  margin-left: 0;
+  margin-left: -50px;
 }
 
 .get-resume {
@@ -410,14 +410,13 @@ li {
   font-size: 20px;
   font-weight: 500;
   margin-top: 40px;
-  margin-left: 125px;
+  margin-left: 80px;
 }
 
 .skills {
-  margin-left: 780px;
+  margin-left: 720px;
   margin-top: -420px;
-  width: 850px;
-  position: relative;
+  width: 70%;
 }
 
 .skills ul {
@@ -482,14 +481,14 @@ li {
 
 .languages .fa.fa-angle-down {
   margin-top: 33px;
-  margin-right: 270px;
+  margin-right: 450px;
 }
 
 .frameworks {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #c1c7d0;
-  width: 600px;
+  width: 620px;
 }
 
 .frameworks p {
@@ -510,7 +509,7 @@ li {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #c1c7d0;
-  width: 600px;
+  width: 620px;
 }
 
 .non-tech-skills p {
