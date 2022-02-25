@@ -129,6 +129,7 @@ li {
   display: grid;
   justify-content: center;
   align-items: center;
+  width: 86%;
 }
 
 .work-sample-1 {
@@ -139,7 +140,7 @@ li {
   background-color: white;
   border-radius: 20px;
   height: 600px;
-  width: 86%;
+  width: 327px;
 }
 
 .desktop-1 {
@@ -153,7 +154,7 @@ li {
   background-color: white;
   border-radius: 20px;
   height: 650px;
-  width: 86%;
+  width: 327px;
 }
 
 .desktop-2 {
@@ -167,7 +168,7 @@ li {
   background-color: white;
   border-radius: 20px;
   height: 600px;
-  width: 86%;
+  width: 327px
 }
 
 .desktop-3 {
@@ -181,7 +182,7 @@ li {
   background-color: white;
   border-radius: 20px;
   height: 650px;
-  width: 86%;
+  width: 327px;
 }
 
 .desktop-4 {
