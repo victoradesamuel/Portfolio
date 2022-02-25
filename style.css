@@ -51,6 +51,17 @@ nav {
   color: #6070ff;
   font-weight: bold;
   padding: 15px 15px;
+  transition: rotate 2s ease;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav-button {
@@ -63,6 +74,7 @@ nav {
   border-radius: 5px;
   padding-top: 12px;
   margin-right: 18px;
+  transition: all 1s ease;
 }
 
 .nav-items {
@@ -123,7 +135,7 @@ li {
 }
 
 .work-samples {
-  margin-left: 2px;
+  margin-left: 1px;
   margin-top: 10px;
   display: grid;
   justify-content: center;
