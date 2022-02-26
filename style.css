@@ -135,7 +135,6 @@ li {
 }
 
 .work-samples {
-  margin-left: 1px;
   margin-top: 10px;
   display: grid;
   justify-content: center;
@@ -588,6 +587,6 @@ form {
 }
 
 #btn-submit:disabled {
-  background-color: white;
   color: #5e6c84;
+  border: 1px solid #c1c7d0;
 }

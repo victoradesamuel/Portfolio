@@ -368,6 +368,33 @@ li {
   margin-left: -585px;
 }
 
+.see-project1:hover,
+.see-project2:hover,
+.see-project3:hover,
+.see-project4:hover {
+  background-color: #6070ff;
+  color: white;
+  box-shadow: 5px 5px 5px #172b4d;
+  border: none;
+}
+
+.see-project1:active,
+.see-project2:active,
+.see-project3:active,
+.see-project4:active {
+  background-color: #2230d2;
+  color: white;
+  border: none;
+}
+
+.see-project1:disabled,
+.see-project2:disabled,
+.see-project3:disabled,
+.see-project4:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+}
+
 .about-me {
   height: 950px;
   background-color: white;
@@ -480,7 +507,8 @@ li {
 
 .languages .fa.fa-angle-down {
   margin-top: 33px;
-  margin-right: 300px;
+  margin-left: 290px;
+  margin-right: 90px;
 }
 
 .frameworks {
@@ -538,7 +566,7 @@ li {
 
 .contact-form h2 {
   color: white;
-  padding-left: 600px;
+  padding-left: 420px;
   padding-top: 150px;
   font-size: 45px;
 }
@@ -548,7 +576,7 @@ li {
   width: 650px;
   font-size: 19px;
   text-align: center;
-  margin-left: 340px;
+  margin-left: 160px;
 }
 
 form {
