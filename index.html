@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="style2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap" />
@@ -13,21 +14,27 @@
 </head>
 <body>
     <header>
-        <div class="nav-logo">
-            <a href="index.html">Son of Zion</a>
-        </div>
-        <nav class="nav-button">
-            <a href="#">
-                <img src="./assets/images/Union.png" alt="hamburger-menu">
-            </a>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html">Son of Zion</a>
+            </div>
+            <div class="nav-button">
+                <a href="#">
+                    <img src="./assets/images/Union.png" alt="hamburger-menu">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="#" class="nav-links">Portfolio</a>
+                <a href="#" class="nav-links">About</a>
+                <a href="#" class="nav-links">contact</a>
+            </div>
         </nav>
     </header>
     <main>
         <section class="intro-section">
             <div class="intro">
                 <h1>I'm Victor<br>
-                    Glad to see<br> 
-                    you!
+                    Glad to see<span> you!</span>
                 </h1>
                 <p>I'm a software developer! I can help you build a product , 
                     feature or website Look through some of my work and experience! 
@@ -54,69 +61,103 @@
             </div>
         </section>
         <section class="work-samples">
-            <div class="sample-1">
-                <img src="./assets/images/Snapshoot-Portfolio.png" alt="image">
+            <div class="work-sample-1">
+                <img src="./assets/images/Snapshoot-Portfolio.png" alt="image" class="mobile-1">
+                <img src="./assets/images/SnapshootPortfolio.png" alt="image" class="desktop-1">
                 <h3 class="title">Tonic</h3>
+                <h3 class="title1">Tonic</h3>
                 <div class="details">
                     <div class="name">CANOPY</div>
                     <div class="type">Back End Dev</div>
                     <div class="year">2015</div>
                 </div>
-                <P class="description">A daily selection of privately personalized reads; no accounts or sign-ups required.</P>
+                <div class="details1">
+                    <div class="name">CANOPY</div>
+                    <div class="type">Back End Dev</div>
+                    <div class="year">2015</div>
+                </div>
+                <P class="description1">A daily selection of privately personalized reads; no accounts or sign-ups required.</P>
                 <ul class="tools">
                     <li class="html">html</li>
                     <li class="css">css</li>
                     <li class="javascript">javascript</li>
                 </ul>
-                <button class="see-project" type="button">See Project</button>
+                <button class="see-project1" type="button">See Project</button>
             </div>
-            <div class="sample-2">
-                <img src="./assets/images/Snapshoot-Portfolio-1.png" alt="image">
-                <h3 class="title">Multi-Post<br>Stories</h3>
+            <div class="work-sample-2">
+                <img src="./assets/images/Snapshoot-Portfolio-1.png" alt="image" class="mobile-2">
+                <img src="./assets/images/SnapshootPortfolio1.png" alt="image" class="desktop-2">
+                <h3 class="title">Multi-Post<span> Stories</span></h3>
+                <h3 class="title1">Multi-Post<span> Stories</span></h3>
                 <div class="details">
                     <div class="name">CANOPY</div>
                     <div class="type">Back End Dev</div>
                     <div class="year">2015</div>
                 </div>
-                <P class="description">A daily selection of privately personalized reads; no accounts or sign-ups required.</P>
+                <div class="details1">
+                    <div class="name">FACEBOOK</div>
+                    <div class="type">Full Stack Dev</div>
+                    <div class="year">2015</div>
+                </div>
+                <P class="description2">A daily selection of privately personalized reads; no accounts or sign-ups required.</P>
+                <P class="description-2">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</P>
                 <ul class="tools">
                     <li class="html">html</li>
+                    <li class="ruby">Ruby on rails</li>
                     <li class="css">css</li>
                     <li class="javascript">javascript</li>
                 </ul>
-                <button class="see-project" type="button">See Project</button>
+                <button class="see-project2" type="button">See Project</button>
             </div>
-            <div class="sample-3">
-                <img src="./assets/images/Snapshoot-Portfolio-2.png" alt="image">
+            <div class="work-sample-3">
+                <img src="./assets/images/Snapshoot-Portfolio-2.png" alt="image" class="mobile-3">
+                <img src="./assets/images/SnapshootPortfolio2.png" alt="image" class="desktop-3">
                 <h3 class="title">Tonic</h3>
+                <h3 class="title1">Facebook 360</h3>
                 <div class="details">
                     <div class="name">CANOPY</div>
                     <div class="type">Back End Dev</div>
                     <div class="year">2015</div>
                 </div>
-                <P class="description">A daily selection of privately personalized reads; no accounts or sign-ups required.</P>
+                <div class="details1">
+                    <div class="name">FACEBOOK</div>
+                    <div class="type">Full Stack Dev</div>
+                    <div class="year">2015</div>
+                </div>
+                <P class="description3">A daily selection of privately personalized reads; no accounts or sign-ups required.</P>
+                <P class="description-3">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</P>
                 <ul class="tools">
                     <li class="html">html</li>
+                    <li class="ruby">Ruby on rails</li>
                     <li class="css">css</li>
                     <li class="javascript">javascript</li>
                 </ul>
-                <button class="see-project" type="button">See Project</button>
+                <button class="see-project3" type="button">See Project</button>
             </div>
-            <div class="sample-4">
-                <img src="./assets/images/Snapshoot-Portfolio-3.png" alt="image">
-                <h3 class="title">Multi-Post<br>Stories</h3>
+            <div class="work-sample-4">
+                <img src="./assets/images/Snapshoot-Portfolio-3.png" alt="image" class="mobile-4">
+                <img src="./assets/images/SnapshootPortfolio3.png" alt="image" class="desktop-4">
+                <h3 class="title">Multi-Post<span> Stories</span></h3>
+                <h3 class="title1">Uber Navigation</h3>
                 <div class="details">
                     <div class="name">CANOPY</div>
                     <div class="type">Back End Dev</div>
                     <div class="year">2015</div>
                 </div>
-                <P class="description">A daily selection of privately personalized reads; no accounts or sign-ups required.</P>
+                <div class="details1">
+                    <div class="name">UBER</div>
+                    <div class="type">Lead Developer</div>
+                    <div class="year">2018</div>
+                </div>
+                <P class="description4">A daily selection of privately personalized reads; no accounts or sign-ups required.</P>
+                <P class="description-4">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</P>
                 <ul class="tools">
                     <li class="html">html</li>
+                    <li class="ruby">Ruby on rails</li>
                     <li class="css">css</li>
                     <li class="javascript">javascript</li>
                 </ul>
-                <button class="see-project" type="button">See Project</button>
+                <button class="see-project4" type="button">See Project</button>
             </div>
         </section>
         <section class="about-me">
