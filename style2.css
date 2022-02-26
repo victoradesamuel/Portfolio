@@ -507,8 +507,8 @@ li {
 
 .languages .fa.fa-angle-down {
   margin-top: 33px;
-  margin-left: 290px;
-  margin-right: 90px;
+  margin-left: 250px;
+  margin-right: 200px;
 }
 
 .frameworks {
@@ -566,7 +566,7 @@ li {
 
 .contact-form h2 {
   color: white;
-  padding-left: 420px;
+  padding-left: 600px;
   padding-top: 150px;
   font-size: 45px;
 }
@@ -576,7 +576,7 @@ li {
   width: 650px;
   font-size: 19px;
   text-align: center;
-  margin-left: 160px;
+  margin-left: 335px;
 }
 
 form {
