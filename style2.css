@@ -57,10 +57,14 @@ nav {
   padding-right: 50px;
 }
 
-.nav-items .nav-links {
+.mobile-nav-content .nav-links {
   padding: 15px 15px;
   font-weight: 500;
   color: #344563;
+}
+
+.close-btn {
+  display: none;
 }
 
 .intro-section {
@@ -118,9 +122,10 @@ li {
 }
 
 .work-samples {
-  margin-left: 130px;
   margin-top: 150px;
-  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-sample-1 {
