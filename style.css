@@ -90,12 +90,22 @@ nav {
 }
 
 .mobile-nav-content {
+  display: none;
   position: relative;
   top: 10%;
   width: 100%;
   margin-top: 3px;
   align-items: center;
 }
+
+ .mobile-toggle {
+   display: block;
+   position: relative;
+   top: 10%;
+   width: 100%;
+   margin-top: 3px;
+   align-items: center;
+ } 
 
 .nav-items .nav-links {
   padding-left: 30px;
