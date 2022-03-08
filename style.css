@@ -108,7 +108,8 @@ nav {
   transition: 0.3s;
 }
 
-.nav-links:hover, .nav-links:focus {
+.nav-links:hover, 
+.nav-links:focus {
   color: #3f3e44;
 }
 
