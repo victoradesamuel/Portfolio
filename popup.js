@@ -1,48 +1,48 @@
 const popup = [
-    {
-        projectName: `Tonic`,
-        author: `CANOPY`,
-        stack: `Back End Dev`,
-        year: `2015`,
-        description: `A daily selection of privately personalized reads; no accounts or sign-ups required`,
-        projectImage: `./assets/images/SnapshootPortfolio.png`,
-        tools: [`html •`, `css •`, `javascript`],
-        live: null,
-        source: null,
-    },
-    {
-        projectName: `Multi-Post Stories`,
-        author: `FACEBOOK`,
-        stack: `Full Stack Dev`,
-        year: `2015`,
-        description: `Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends`,
-        projectImage: `./assets/images/SnapshootPortfolio1.png`,
-        tools: [`html •`, `css •`, `javascript`],
-        live: null,
-        source: null,  
-    },
-    {
-        projectName: `Facebook 360`,
-        author: `FACEBOOK`,
-        stack: `Full Stack Dev`,
-        year: `2015`,
-        description: `Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.`,
-        projectImage: `./assets/images/SnapshootPortfolio2.png`,
-        tools: [`html •`, `css •`, `javascript`],
-        live: null,
-        source: null, 
-    },
-    {
-        projectName: `Uber Navigation`,
-        author: `UBER`,
-        stack: `Lead Developer`,
-        year: `2015`,
-        description: `A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.`,
-        projectImage: `./assets/images/SnapshootPortfolio3.png`,
-        tools: [`html •`, `css •`, `javascript`],
-        live: null,
-        source: null, 
-    },
+  {
+    projectName: 'Tonic',
+    author: 'CANOPY',
+    stack: 'Back End Dev',
+    year: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    projectImage: './assets/images/SnapshootPortfolio.png',
+    tools: ['html •', 'css •', 'javascript'],
+    live: null,
+    source: null,
+  },
+  {
+    projectName: 'Multi-Post Stories',
+    author: 'FACEBOOK',
+    stack: 'Full Stack Dev',
+    year: '2015',
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends',
+    projectImage: './assets/images/SnapshootPortfolio1.png',
+    tools: ['html •', 'css •', 'javascript'],
+    live: null,
+    source: null,
+  },
+  {
+    projectName: 'Facebook 360',
+    author: 'FACEBOOK',
+    stack: 'Full Stack Dev',
+    year: '2015',
+    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    projectImage: './assets/images/SnapshootPortfolio2.png',
+    tools: ['html •', 'css •', 'javascript'],
+    live: null,
+    source: null,
+  },
+  {
+    projectName: 'Uber Navigation',
+    author: 'UBER',
+    stack: 'Lead Developer',
+    year: '2015',
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    projectImage: './assets/images/SnapshootPortfolio3.png',
+    tools: ['html •', 'css •', 'javascript'],
+    live: null,
+    source: null,
+  },
 ];
 
 document.querySelector('.modals').innerHTML = popup
@@ -94,29 +94,29 @@ alt="github icon" class="modal-img"
   )
   .join('');
 
-const openModalBtn = document.querySelectorAll('[data-modal-target]')
-const closeModalBtn = document.querySelectorAll('[data-close-button]')
-
-openModalBtn.forEach(button=> {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
-
-closeModalBtn.forEach(button=> {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
+const openModalBtn = document.querySelectorAll('[data-modal-target]');
+const closeModalBtn = document.querySelectorAll('[data-close-button]');
 
 function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
+  if (modal == null) return;
+  modal.classList.add('active');
 }
 
-function openModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
 }
+
+openModalBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+closeModalBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
