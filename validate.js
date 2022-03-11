@@ -1,4 +1,4 @@
-const Form = document.querySelector('.form');
+const Form = document.querySelector('.form-valid');
 const emailInput = document.querySelector('.email');
 const validation = document.querySelector('.message-validation');
 
