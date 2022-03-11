@@ -643,3 +643,25 @@ form {
   color: #5e6c84;
   border: 1px solid #c1c7d0;
 }
+
+.modal-description {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 0;
+  margin: 12px 0;
+  gap: 100px;
+}
+
+.modal-tools {
+  flex: 40%;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: left;
+}
