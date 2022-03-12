@@ -171,7 +171,8 @@ header {
   flex-direction: column;
   align-items: flex-start;
   padding: 120px 20px;
-  background: url("../assets/images/header-shapes-mobile.png") 0 50px no-repeat;
+  background: url("../assets/images/header-shapes-mobile.png") 0 50px;
+  background-repeat: no-repeat
   background-size: 100% auto;
   background-color: var(--white);
   border-bottom-left-radius: 150px;
@@ -767,7 +768,8 @@ input.success {
   .intro {
     min-height: 921.46px;
     min-width: 375px;
-    background: url("../assets/images/header-bg.png") 0 70px no-repeat;
+    background: url("../assets/images/header-bg.png") 0 70px;
+    background-repeat: no-repeat
     background-size: 100% 691.46px;
     background-color: var(--white);
     max-width: initial;
