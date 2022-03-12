@@ -171,7 +171,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   padding: 120px 20px;
-  background: url("../assets/images/header-shapes-mobile.png") 0 50px;
+  background: url("assets/images/header-shapes-mobile.png") 0 50px no-repeat;
   background-size: 100% auto;
   background-color: var(--white);
   border-bottom-left-radius: 150px;
@@ -481,27 +481,27 @@ button:disabled {
 
 .language-list li:nth-child(1)::before {
   padding: 5px 10px;
-  content: url(../assets/images/javascript.png);
+  content: url(assets/images/javascript.png);
 }
 
 .language-list li:nth-child(2)::before {
-  content: url(../assets/images/html5.png);
+  content: url(assets/images/html5.png);
   padding: 5px 10px;
 }
 
 .language-list li:nth-child(3)::before {
-  content: url(../assets/images/css3.png);
+  content: url(assets/images/css3.png);
   padding: 5px 10px;
 }
 
 .framework-list li:nth-child(1)::before {
   padding: 5px 10px;
-  content: url(../assets/images/bootstrap.png);
+  content: url(assets/images/bootstrap.png);
 }
 
 .framework-list li:nth-child(2)::before {
   padding: 5px 10px;
-  content: url(../assets/images/reactjs.png);
+  content: url(assets/images/reactjs.png);
 }
 
 /* contact section styling starts here */
@@ -511,7 +511,7 @@ button:disabled {
 }
 
 .contact-container {
-  background: url(../assets/images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
+  background: url(assets/images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
   background-color: var(--primary-color);
   border-top-left-radius: 150px;
   background-size: auto 725px;
@@ -767,7 +767,7 @@ input.success {
   .intro {
     min-height: 921.46px;
     min-width: 375px;
-    background: url("../assets/images/header-background.png") 0 70px;
+    background: url("assets/images/header-background.png") 0 70px no-repeat;
     background-size: 100% 691.46px;
     background-color: var(--white);
     max-width: initial;
@@ -914,7 +914,7 @@ input.success {
   /* contact section styling starts here */
 
   .contact-container {
-    background: url(../assets/images/contact-form-background-shapes.png) 0 79px no-repeat;
+    background: url(assets/images/contact-form-background-shapes.png) 0 79px no-repeat;
     background-color: var(--primary-color);
     border-top-left-radius: 150px;
     background-size: 100% 632.79px;
