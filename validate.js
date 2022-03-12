@@ -1,11 +1,36 @@
-const Form = document.querySelector('.form-valid');
-const emailInput = document.querySelector('.email');
-const validation = document.querySelector('.message-validation');
+const form = document.querySelector('#form');
 
-Form.addEventListener('submit', (event) => {
-  const stringMessage = emailInput.value;
-  if (/[A-Z]/.test(stringMessage)) {
-    validation.innerHTML = 'Error! Your submission was unsuccessful, please input email in lowercase.';
-    event.preventDefault();
+const EMAIL_INVALID = 'Error!,Your form was not submitted. Pls input email in lowercase e.g abc@gmail.com';
+
+function displayMessage(input, message, type) {
+  document.querySelector('small').innerText = message;
+  input.className = type ? 'success' : 'error';
+  return type;
+}
+
+function showError(input, message) {
+  return displayMessage(input, message, false);
+}
+
+function showSuccess(input) {
+  return displayMessage(input, '', true);
+}
+
+function validateEmail(input, invalidMsg) {
+  const email = input.value.trim();
+  if (email !== email.toLowerCase()) {
+    return showError(input, invalidMsg);
+  }
+  showSuccess(input);
+  return true;
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
+
+  if (emailValid) {
+    form.submit();
+    localStorage.clear();
   }
 });

@@ -46,6 +46,7 @@ Github
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -54,10 +55,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
-- Coding Parners
-
+- Coding Partners
 
 ## 📝 License
 
-This project is [MIT](https://github.com/victoradesamuel/Portfolio/commit/c817e36ee1da19c48679d473838816ebf7985602) licensed.
-
+This project is [MIT](./MIT.md) licensed.

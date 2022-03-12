@@ -1,88 +1,125 @@
 const popup = [
   {
-    projectName: 'Tonic',
+    name: 'Tonic',
     author: 'CANOPY',
-    stack: 'Back End Dev',
-    year: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    projectImage: './assets/images/SnapshootPortfolio.png',
-    tools: ['html •', 'css •', 'javascript'],
-    live: null,
-    source: null,
+    stack: 'Backend Dev',
+    year: 2015,
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: './assets/images/Snapshoot-Portfolio-3.png',
+    tools: ['html', 'css', 'javascript'],
+    live: 'github.com/victoradesamuel',
+    source: 'github.com/victoradesamuel',
   },
   {
-    projectName: 'Multi-Post Stories',
+    name: 'Multi-Post Stories',
     author: 'FACEBOOK',
     stack: 'Full Stack Dev',
-    year: '2015',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends',
-    projectImage: './assets/images/SnapshootPortfolio1.png',
-    tools: ['html •', 'css •', 'javascript'],
-    live: null,
-    source: null,
+    year: 2015,
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    featuredImage: './assets/images/Snapshoot-Portfolio-4.png',
+    tools: ['html', 'css', 'javascript'],
+    live: 'github.com/victoradesamuel',
+    source: 'github.com/victoradesamuel',
   },
   {
-    projectName: 'Facebook 360',
-    author: 'FACEBOOK',
+    name: 'Tonic',
+    author: 'FACEBOOK 360',
     stack: 'Full Stack Dev',
-    year: '2015',
-    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    projectImage: './assets/images/SnapshootPortfolio2.png',
-    tools: ['html •', 'css •', 'javascript'],
-    live: null,
-    source: null,
+    year: 2015,
+    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    featuredImage: './assets/images/Snapshoot-Portfolio.png',
+    tools: ['html', 'css', 'javascript'],
+    live: 'github.com/victoradesamuel',
+    source: 'github.com/victoradesamuel',
   },
   {
-    projectName: 'Uber Navigation',
-    author: 'UBER',
+    name: 'Uber Navigation',
+    author: 'Uber',
     stack: 'Lead Developer',
-    year: '2015',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    projectImage: './assets/images/SnapshootPortfolio3.png',
-    tools: ['html •', 'css •', 'javascript'],
-    live: null,
-    source: null,
+    year: 2015,
+    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    featuredImage: './assets/images/Snapshoot-Portfolio-2.png',
+    tools: ['html', 'css', 'javascript'],
+    live: 'github.com/victoradesamuel',
+    source: 'github.com/victoradesamuel',
   },
 ];
 
+document.querySelector('.works').innerHTML = popup
+  .map(
+    (currentProject) => `
+    <section class="project">
+<div class="project-img">
+<img
+src= ${currentProject.featuredImage}
+class="snapshoot"
+alt="Tonic project image"
+/>
+</div>
+<div class="project-description">
+<h2 class="project-title">${currentProject.name}</h2>
+<ul class="project-author">
+<li>${currentProject.author}</li>
+<li>${currentProject.stack}</li>
+<li>${currentProject.year}</li>
+</ul>
+<p class="project-text"
+>${currentProject.description}</p
+>
+<ul class="project-tools">
+<li>${currentProject.tools[0]}</li>
+<li>${currentProject.tools[1]}</li>
+<li>${currentProject.tools[2]}</li>
+</ul>
+<button type="button" class="btn">See Project</button>
+</div>
+</section>
+    `,
+  )
+  .join('');
+
+for (let i = 0; i <= popup.length; i += 1) {
+  if (i % 2 === 1) {
+    document.querySelectorAll('.project')[i].classList.add('order');
+  }
+}
+
 document.querySelector('.modals').innerHTML = popup
   .map(
-    (data) => `
-<div class="modal" id="modal">
+    (currentProject) => `
+<div class="modal">
 <div class="modal-container"> 
   <div class="modal-title">
-<h2 class="project-title">${data.projectName}</h2>
-    <button data-close-button class="close-button>&times;</button>
+<h2 class="project-title">${currentProject.name}</h2>
+    <div class="close">
+  <i class="fa fa-times fa-1x"></i>
+    </div>
 </div>
   <ul class="project-author">
-    <li>${data.author}</li>
-    <li>${data.stack}</li>
-    <li>${data.year}</li>
+    <li>${currentProject.author}</li>
+    <li>${currentProject.stack}</li>
+    <li>${currentProject.year}</li>
   </ul>
   <div class="project-img">
     <img
-      src= ${data.projectImage}
+      src= ${currentProject.featuredImage}
       class="snapshoot"
       alt="Tonic project image"
     />
   </div>
   <div class="modal-description">
-    <p class="project-text"
-      >${data.description}</p
-    >
+    <p class="project-text">${currentProject.description}</p>
     <div class="modal-tools">
       <ul class="project-tools">
-        <li>${data.tools[0]}</li>
-        <li>${data.tools[1]}</li>
-        <li>${data.tools[2]}</li>
+        <li>${currentProject.tools[0]}</li>
+        <li>${currentProject.tools[1]}</li>
+        <li>${currentProject.tools[2]}</li>
       </ul>
       <span></span>
       <div class="buttons">
-        <a href="${data.live}" class="modal-button" target="_blank" rel="noopener noreferrer">See Live <img
+        <a href="${currentProject.live}" class="modal-button" target="_blank" rel="noopener noreferrer">See Live <img
 src="./assets/images/Icon.png"
-alt="live site icon" class="modal-img"
-/></a>
-        <a href="${data.source}" class="modal-button" target="_blank" rel="noopener noreferrer">See Source <img
+alt="live site icon" class="modal-img"/></a><a href="${currentProject.source}" class="modal-button" target="_blank" rel="noopener noreferrer">See Source <img
 src="./assets/images/github.png"
 alt="github icon" class="modal-img"
 /></a>
@@ -94,29 +131,23 @@ alt="github icon" class="modal-img"
   )
   .join('');
 
-const openModalBtn = document.querySelectorAll('[data-modal-target]');
-const closeModalBtn = document.querySelectorAll('[data-close-button]');
+// event listeners for opening modal on button click
+const modalButtons = Array.from(document.querySelectorAll('.btn'));
+const modals = Array.from(document.querySelectorAll('.modal'));
 
-function openModal(modal) {
-  if (modal == null) return;
-  modal.classList.add('active');
-}
+const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]]);
 
-function closeModal(modal) {
-  if (modal == null) return;
-  modal.classList.remove('active');
-}
-
-openModalBtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
+modalButtonZip.forEach((pair) => {
+  pair[0].addEventListener('click', () => {
+    pair[1].style.display = 'block';
   });
 });
 
-closeModalBtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal');
-    closeModal(modal);
+// event listener for closing modal on button click
+document.querySelectorAll('.close').forEach((close) => {
+  close.addEventListener('click', () => {
+    document.querySelectorAll('.modal').forEach((modal) => {
+      modal.style.display = 'none';
+    });
   });
 });
