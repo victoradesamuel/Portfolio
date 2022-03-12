@@ -767,7 +767,7 @@ input.success {
   .intro {
     min-height: 921.46px;
     min-width: 375px;
-    background: url("../assets/images/header-bg.png") 0 70px;
+    background: url("../assets/images/header-background.png") 0 70px;
     background-size: 100% 691.46px;
     background-color: var(--white);
     max-width: initial;
