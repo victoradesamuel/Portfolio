@@ -1,6 +1,6 @@
 const form = document.querySelector('#form');
 
-const EMAIL_INVALID = 'Sorry!, form was not submitted. Your email should be in lowercase e.g abc@gmail.com';
+const EMAIL_INVALID = 'Error!,Your form was not submitted. Pls input email in lowercase e.g abc@gmail.com';
 
 function displayMessage(input, message, type) {
   document.querySelector('small').innerText = message;

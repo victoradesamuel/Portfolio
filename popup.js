@@ -1,4 +1,4 @@
-const projectDatas = [
+const popup = [
 	{
 		name: 'Tonic',
 		author: 'CANOPY',
@@ -7,9 +7,9 @@ const projectDatas = [
 		description:
 			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 		featuredImage: './assets/images/Snapshoot-Portfolio-3.png',
-		technologies: ['html', 'css', 'javascript'],
-		liveVersion: null,
-		source: null,
+		tools: ['html', 'css', 'javascript'],
+		live: 'github.com/victoradesamuel',
+		source: 'github.com/victoradesamuel',
 	},
 	{
 		name: 'Multi-Post Stories',
@@ -19,9 +19,9 @@ const projectDatas = [
 		description:
 			'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
 		featuredImage: './assets/images/Snapshoot-Portfolio-4.png',
-		technologies: ['html', 'css', 'javascript'],
-		liveVersion: null,
-		source: null,
+		tools: ['html', 'css', 'javascript'],
+		live: 'github.com/victoradesamuel',
+		source: 'github.com/victoradesamuel',
 	},
 	{
 		name: 'Tonic',
@@ -31,9 +31,9 @@ const projectDatas = [
 		description:
 			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
 		featuredImage: './assets/images/Snapshoot-Portfolio.png',
-		technologies: ['html', 'css', 'javascript'],
-		liveVersion: null,
-		source: null,
+		tools: ['html', 'css', 'javascript'],
+		live: 'github.com/victoradesamuel',
+		source: 'github.com/victoradesamuel',
 	},
 	{
 		name: 'Uber Navigation',
@@ -43,37 +43,37 @@ const projectDatas = [
 		description:
 			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
 		featuredImage: './assets/images/Snapshoot-Portfolio-2.png',
-		technologies: ['html', 'css', 'javascript'],
-		liveVersion: null,
-		source: null,
+		tools: ['html', 'css', 'javascript'],
+		live: 'github.com/victoradesamuel',
+		source: 'github.com/victoradesamuel',
 	},
 ]
 
-document.querySelector('.works').innerHTML = projectDatas
+document.querySelector('.works').innerHTML = popup
 	.map(
-		data => `
+		currentProject => `
     <section class="project">
 <div class="project-img">
 <img
-src= ${data.featuredImage}
+src= ${currentProject.featuredImage}
 class="snapshoot"
 alt="Tonic project image"
 />
 </div>
 <div class="project-description">
-<h2 class="project-title">${data.name}</h2>
+<h2 class="project-title">${currentProject.name}</h2>
 <ul class="project-author">
-<li>${data.author}</li>
-<li>${data.stack}</li>
-<li>${data.year}</li>
+<li>${currentProject.author}</li>
+<li>${currentProject.stack}</li>
+<li>${currentProject.year}</li>
 </ul>
 <p class="project-text"
->${data.description}</p
+>${currentProject.description}</p
 >
 <ul class="project-tools">
-<li>${data.technologies[0]}</li>
-<li>${data.technologies[1]}</li>
-<li>${data.technologies[2]}</li>
+<li>${currentProject.tools[0]}</li>
+<li>${currentProject.tools[1]}</li>
+<li>${currentProject.tools[2]}</li>
 </ul>
 <button type="button" class="btn">See Project</button>
 </div>
@@ -82,52 +82,52 @@ alt="Tonic project image"
 	)
 	.join('')
 
-for (let i = 0; i <= projectDatas.length; i += 1) {
+for (let i = 0; i <= popup.length; i += 1) {
   if (i % 2 === 1) {
     document.querySelectorAll('.project')[i].classList.add('order');
   }
 }
 
-document.querySelector('.modals').innerHTML = projectDatas
+document.querySelector('.modals').innerHTML = popup
   .map(
-    (data) => `
+    (currentProject) => `
 <div class="modal">
 <div class="modal-container"> 
   <div class="modal-title">
-<h2 class="project-title">${data.name}</h2>
+<h2 class="project-title">${currentProject.name}</h2>
     <div class="close">
   <i class="fa fa-times fa-1x"></i>
     </div>
 </div>
   <ul class="project-author">
-    <li>${data.author}</li>
-    <li>${data.stack}</li>
-    <li>${data.year}</li>
+    <li>${currentProject.author}</li>
+    <li>${currentProject.stack}</li>
+    <li>${currentProject.year}</li>
   </ul>
   <div class="project-img">
     <img
-      src= ${data.featuredImage}
+      src= ${currentProject.featuredImage}
       class="snapshoot"
       alt="Tonic project image"
     />
   </div>
   <div class="modal-description">
     <p class="project-text"
-      >${data.description}</p
+      >${currentProject.description}</p
     >
     <div class="modal-tools">
       <ul class="project-tools">
-        <li>${data.technologies[0]}</li>
-        <li>${data.technologies[1]}</li>
-        <li>${data.technologies[2]}</li>
+        <li>${currentProject.tools[0]}</li>
+        <li>${currentProject.tools[1]}</li>
+        <li>${currentProject.tools[2]}</li>
       </ul>
       <span></span>
       <div class="buttons">
-        <a href="${data.liveVersion}" class="modal-button" target="_blank" rel="noopener noreferrer">See Live <img
+        <a href="${currentProject.live}" class="modal-button" target="_blank" rel="noopener noreferrer">See Live <img
 src="./assets/images/Icon.png"
 alt="live site icon" class="modal-img"
 /></a>
-        <a href="${data.source}" class="modal-button" target="_blank" rel="noopener noreferrer">See Source <img
+        <a href="${currentProject.source}" class="modal-button" target="_blank" rel="noopener noreferrer">See Source <img
 src="./assets/images/github.png"
 alt="github icon" class="modal-img"
 /></a>
