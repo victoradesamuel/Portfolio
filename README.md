@@ -1,43 +1,45 @@
-# my-portfolio
+# Portfolio
 
-This project is focused on building a personal portfolio project.
+> A personal professional portfolio of Victor Ade-Samuel
 
-![screenshot](./assets/images/screenshot.jpg)
-
-The goal of this project is to build a simple single page responssive portfolio project where all other personal projects will be kept. In this project, you are expected to setup Html-CSS linter following the guildlines stated in the Html-CSS limter config documentation, follow mobile first approach while building the website, run tests and finally deploy.
-The project will contain an about me page, a project page and contact information
 
 ## Built With
 
-- HTML5, Javascript
+- HTML5
 - CSS3
-- Linters
 
-## Live Demo
 
-[Live Demo Link](https://vickymarz.github.io/my-portfolio/)
+## Live Demo 
 
-To get a local copy up and running follow these simple example steps.
+[Live Demo Link](https://victoradesamuel.github.io/Portfolio/)
+
+
 
 ### Prerequisites
-- Have a good knowledge on how to use figma
-- Have VSCode or other text editor installed. [Link to download VSCode](https://code.visualstudio.com/download)
-- Install node package. [Link to download node](https://nodejs.org/en/download/)
-- Have git installed.[Link to download git](https://git-scm.com/downloads)
-- Create a github repository.
+- Good knowledge of Figma
+- Create Github repository
+- Have VSCode or choice text editor installed
+- Have Git installed
+- HTML/CSS Linters
 
 ### Setup
-- git clone https://github.com/vickymarz/my-portfolio.git
-- cd my-portfolio/
--Follow the HTML-CSS linter confuguration to docs to setup linters [Link to Microverse linter docs](https://github.com/microverseinc/linters-config/tree/master/html-css)
+- Git clone - https://github.com/victoradesamuel/Portfolio
+- HTML, CSS Linter configuration - https://github.com/microverseinc/linters-config/tree/master/html-css
 
-## Author
 
-👤 **Okoroji Victor aka Vickymarz**
+### Deployment
+Github
 
-- GitHub: [@githubhandle](https://github.com/vickymarz)
 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/okoroji-victor-ebube-8791741a0)
+
+## Authors
+
+👤 Victor Ade-Samuel
+
+- GitHub: [@victoradesamuel](https://github.com/victoradesamuel)
+- Twitter: [@son_ofzion](https://twitter.com/son_ofzion)
+- LinkedIn: [Victor-Adesamuel](https://linkedin.com/in/sonofzion)
+
 
 
 ## 🤝 Contributing

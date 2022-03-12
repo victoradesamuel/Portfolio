@@ -113,6 +113,7 @@ document.querySelector('.modals').innerHTML = popup
   </div>
   <div class="modal-description">
     <p class="project-text"
+<<<<<<< HEAD
       >${currentProject.description}</p
     >
     <div class="modal-tools">
@@ -128,6 +129,23 @@ src="./assets/images/Icon.png"
 alt="live site icon" class="modal-img"
 /></a>
         <a href="${currentProject.source}" class="modal-button" target="_blank" rel="noopener noreferrer">See Source <img
+=======
+      >${data.description}</p
+    >
+    <div class="modal-tools">
+      <ul class="project-tools">
+        <li>${data.tools[0]}</li>
+        <li>${data.tools[1]}</li>
+        <li>${data.tools[2]}</li>
+      </ul>
+      <span></span>
+      <div class="buttons">
+        <a href="${data.live}" class="modal-button" target="_blank" rel="noopener noreferrer">See Live <img
+src="./assets/images/Icon.png"
+alt="live site icon" class="modal-img"
+/></a>
+        <a href="${data.source}" class="modal-button" target="_blank" rel="noopener noreferrer">See Source <img
+>>>>>>> 128294d1f16e2273ec9f18ae6d206971f6cc8f1c
 src="./assets/images/github.png"
 alt="github icon" class="modal-img"
 /></a>
@@ -139,6 +157,7 @@ alt="github icon" class="modal-img"
   )
   .join('');
 
+<<<<<<< HEAD
 // event listeners for opening modal on button click
 const modalButtons = Array.from(document.querySelectorAll('.btn'));
 const modals = Array.from(document.querySelectorAll('.modal'));
@@ -159,3 +178,31 @@ document.querySelectorAll('.close').forEach((close) => {
     });
   });
 });
+=======
+const openModalBtn = document.querySelectorAll('[data-modal-target]');
+const closeModalBtn = document.querySelectorAll('[data-close-button]');
+
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+}
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+}
+
+openModalBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+closeModalBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
+>>>>>>> 128294d1f16e2273ec9f18ae6d206971f6cc8f1c
